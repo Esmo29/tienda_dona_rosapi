@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Doña Rosa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Tienda Doña Rosa</h1>
+    <div id="app">
+        <!-- Formulario para insertar productos -->
+        <section>
+            <h2>Insertar Producto</h2>
+            <form id="insertarForm">
+                <label for="insertarCodigo">Código:</label>
+                <input type="number" id="insertarCodigo" required>
+                <label for="insertarProducto">Producto:</label>
+                <input type="text" id="insertarProducto" required>
+                <label for="insertarPrecio">Precio:</label>
+                <input type="number" id="insertarPrecio" required>
+                <label for="insertarCantidad">Cantidad:</label>
+                <input type="number" id="insertarCantidad" required>
+                <button type="submit">Insertar</button>
+            </form>
+        </section>
+
+        <!-- Formulario para actualizar productos -->
+        <section>
+            <h2>Actualizar Producto</h2>
+            <form id="actualizarForm">
+                <label for="actualizarCodigo">Código:</label>
+                <input type="number" id="actualizarCodigo" required>
+                <label for="actualizarPrecio">Precio:</label>
+                <input type="number" id="actualizarPrecio" required>
+                <label for="actualizarCantidad">Cantidad:</label>
+                <input type="number" id="actualizarCantidad" required>
+                <button type="submit">Actualizar</button>
+            </form>
+        </section>
+
+        <!-- Formulario para borrar productos -->
+        <section>
+            <h2>Borrar Producto</h2>
+            <form id="borrarForm">
+                <label for="borrarCodigo">Código:</label>
+                <input type="number" id="borrarCodigo" required>
+                <button type="submit">Borrar</button>
+            </form>
+        </section>
+
+        <!-- Sección para ver productos y cálculos -->
+        <section>
+            <h2>Inventario</h2>
+            <button id="verProductosBtn">Ver Productos</button>
+            <ul id="listaProductos"></ul>
+            <button id="verAgotadosBtn">Ver Productos Cerca de Acabarse</button>
+            <ul id="listaAgotados"></ul>
+            <button id="verCostoBtn">Ver Costo Total del Inventario</button>
+            <p id="costoTotal"></p>
+        </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
